@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        bill = [275,40,430]
+        // Calculate the tip, depending on the bill value. Create a variable called 'tip' for
+        // this. It's not allowed to use an if/else statement � (If it's easier for you, you can
+        // start with an if/else statement, and then try to convert it to a ternary operator!)
+        for(const b of  bill){
+            tip = b>=50 && b<=300? b*0.15 : b*0.2;
+            console.log("The bill was "+ b +", the tip was " + tip)
+            
+        }
+
+
+        // Print a string to the console containing the bill value, the tip, and the final value
+        // (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
+        for(const b of  bill){
+            tip = b>=50 && b<=300? b*0.15 : b*0.2;
+            total = b + tip;
+            console.log("The bill was "+ b +", the tip was " + tip +", and the total value " + total)
+            
+        }
+
+    </script>
+</body>
+</html>
