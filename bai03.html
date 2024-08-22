@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        // There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+    //    Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+        const Dolphins = [96,108,89]
+        const Koalas = [88,91,110]
+    
+        const avgDolphins = Dolphins.reduce((sum,score) => sum+score,0)/Dolphins.length
+        const avgKoalas = Koalas.reduce((sum,score) => sum+score,0)/Koalas.length
+
+        console.log("Dolphins: "+ avgDolphins)
+        console.log("Koalas: "+ avgKoalas)
+
+        if(avgDolphins>avgKoalas){
+            console.log("Dolphins win")
+        }else if(avgKoalas>avgDolphins){
+            console.log("Koalas win")
+        }else{
+            console.log("draw!")
+        }
+
+    // Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+        const Dolphins1 = [97,112,101]
+        const Koalas1 = [109,95,123]
+    
+        const avgDolphins1 = Dolphins1.reduce((sum,score) => sum+score,0)/Dolphins1.length
+        const avgKoalas1 = Koalas1.reduce((sum,score) => sum+score,0)/Koalas1.length
+
+        console.log("Dolphins: "+ avgDolphins1)
+        console.log("Koalas: "+ avgKoalas1)
+        if(avgDolphins1>avgKoalas1){
+            console.log("Dolphins win")
+        }else if(avgKoalas1>avgDolphins1){
+            console.log("Koalas win")
+        }else{
+            console.log("draw!")
+        }
+
+        // Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+        const Dolphins2 = [97,112,101]
+        const Koalas2 = [109,95,106]
+    
+        const avgDolphins2 = Dolphins2.reduce((sum,score) => sum+score,0)/Dolphins2.length
+        const avgKoalas2 = Koalas2.reduce((sum,score) => sum+score,0)/Koalas2.length
+
+        console.log("Dolphins: "+ avgDolphins2)
+        console.log("Koalas: "+ avgKoalas2)
+        if(avgDolphins2>avgKoalas2){
+            console.log("Dolphins win")
+        }else if(avgKoalas2>avgDolphins2){
+            console.log("Koalas win")
+        }else{
+            console.log("draw!")
+        }
+    </script>
+</body>
+</html>
